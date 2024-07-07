@@ -1,0 +1,35 @@
+.rolling-squares {
+  .loader {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+    align-items: center;
+  }
+
+  .loader div {
+    width: 20px;
+    height: 20px;
+    background-color: #3498db;
+    animation: roll 1.2s infinite ease-in-out;
+  }
+
+  .loader div:nth-child(1) {
+    animation-delay: -0.4s;
+  }
+
+  .loader div:nth-child(2) {
+    animation-delay: -0.2s;
+  }
+
+  @keyframes roll {
+
+    0%,
+    100% {
+      transform: translateX(0) rotate(0deg);
+    }
+
+    50% {
+      transform: translateX(50px) rotate(360deg);
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.jelly-dots {
+  .loader {
+    position: relative;
+    width: 64px;
+    height: 64px;
+  }
+
+  .loader div {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #3498db;
+    animation: rotate 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  }
+
+  .loader div:nth-child(1) {
+    animation-delay: -0.036s;
+  }
+
+  .loader div:nth-child(2) {
+    animation-delay: -0.072s;
+  }
+
+  .loader div:nth-child(3) {
+    animation-delay: -0.108s;
+  }
+
+  .loader div:nth-child(4) {
+    animation-delay: -0.144s;
+  }
+
+  .loader div:nth-child(5) {
+    animation-delay: -0.18s;
+  }
+
+  .loader div:nth-child(6) {
+    animation-delay: -0.216s;
+  }
+
+  .loader div:nth-child(7) {
+    animation-delay: -0.252s;
+  }
+
+  .loader div:nth-child(8) {
+    animation-delay: -0.288s;
+  }
+
+  @keyframes rotate {
+
+    0%,
+    100% {
+      top: 29px;
+      left: 29px;
+      width: 13px;
+      height: 13px;
+    }
+
+    25% {
+      top: 18px;
+      left: 18px;
+      width: 26px;
+      height: 26px;
+    }
+
+    50% {
+      top: 29px;
+      left: 29px;
+      width: 13px;
+      height: 13px;
+    }
+
+    75% {
+      top: 40px;
+      left: 40px;
+      width: 26px;
+      height: 26px;
+    }
+  }
+}

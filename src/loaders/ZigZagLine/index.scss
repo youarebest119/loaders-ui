@@ -1,0 +1,29 @@
+.zig-zag-line {
+  .loader {
+    width: 80px;
+    height: 5px;
+    background: #3498db;
+    position: relative;
+    animation: zigzag 1s linear infinite;
+  }
+
+  @keyframes zigzag {
+
+    0%,
+    100% {
+      left: 0;
+    }
+
+    25% {
+      left: 20px;
+    }
+
+    50% {
+      left: 40px;
+    }
+
+    75% {
+      left: 60px;
+    }
+  }
+}
