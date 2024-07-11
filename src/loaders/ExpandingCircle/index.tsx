@@ -1,9 +1,14 @@
 import React from 'react';
 import "./index.scss";
-const ExpandingCircle = () => {
+import { ILoader } from '../types';
+const ExpandingCircle = (props: ILoader) => {
+    let className = "expanding-circle";
+    if (props.className) {
+        className += ` ${props.className}`;
+    }
     return (
-        <div className="expanding-circle">
-            <div className="loader">
+        <div className={className}>
+            <div className="loader" style={{ width: props.width, height: props.width, backgroundColor: props.color }}>
             </div>
         </div>
     )

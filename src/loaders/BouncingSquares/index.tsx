@@ -1,12 +1,19 @@
-import React from 'react'
+import React from 'react';
+import { ILoader } from '../types';
 import "./index.scss";
-const BouncingSquares = () => {
+const BouncingSquares = (props: ILoader) => {
+    let className = "bouncing-squares";
+    if (props.className) {
+        className += ` ${props.className}`;
+    }
     return (
-        <div className="bouncing-squares">
-            <div className="loader">
-                <div></div>
-                <div></div>
-                <div></div>
+        <div className={className}>
+            <div
+                className="loader"
+            >
+                <div style={{ backgroundColor: props.color, width: props.width, height: props.width }}></div>
+                <div style={{ backgroundColor: props.color, width: props.width, height: props.width }}></div>
+                <div style={{ backgroundColor: props.color, width: props.width, height: props.width }}></div>
             </div>
         </div>
     )

@@ -1,13 +1,12 @@
 .pulsating-rectangles {
   .loader {
     display: flex;
-    justify-content: space-around;
-    width: 100px;
   }
   .loader div {
     width: 16px;
     height: 32px;
     background-color: #3498db;
+    margin: 3px;
     animation: pulse 1.2s infinite ease-in-out;
   }
   .loader div:nth-child(1) { animation-delay: -0.4s; }

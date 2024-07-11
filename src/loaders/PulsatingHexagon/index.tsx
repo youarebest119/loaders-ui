@@ -1,11 +1,16 @@
 import React from 'react';
 import "./index.scss";
-const PulsatingHexagon = () => {
+import { ILoader } from '../types';
+const PulsatingHexagon = (props: ILoader) => {
+    let className = "pulsating-hexagon";
+    if (props.className) {
+        className += ` ${props.className}`;
+    }
     return (
-        <div className="pulsating-hexagon">
-            <div className="loader">
-                <div></div>
-                <div></div>
+        <div className={className}>
+            <div className="loader" style={{ width: props.width, height: props.width }}>
+                <div style={{ backgroundColor: props.color }}></div>
+                <div style={{ backgroundColor: props.color }}></div>
             </div>
         </div>
     )

@@ -1,18 +1,28 @@
 {
 	"name": "loaders-ui",
-	"version": "1.0.84",
-	"description": "React Loaders",
+	"version": "1.0.98",
+	"description": "A collection of customizable and visually appealing loaders for your web applications.",
 	"main": "dist/",
 	"scripts": {
 		"build": "webpack",
 		"publish": "webpack"
 	},
 	"keywords": [
-		"react",
-		"react-loader"
+	  "loaders",
+	  "react-loaders",
+	  "spinner",
+	  "loading-indicator",
+	  "bouncing-squares",
+	  "circular-spinner",
+	  "pulsing-dot",
+	  "rotating-cube"
 	],
 	"author": "Lovepreet Singh",
 	"license": "ISC",
+	"repository": {
+	  "type": "git",
+	  "url": "https://github.com/youarebest119/loaders-ui"
+	},
 	"devDependencies": {
 		"@types/react": "^18.0.18",
 		"css-loader": "^7.1.2",

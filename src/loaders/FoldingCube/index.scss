@@ -6,7 +6,7 @@
     transform: rotateZ(45deg);
   }
 
-  .loader div {
+  .loader>div {
     float: left;
     width: 50%;
     height: 50%;
@@ -14,8 +14,7 @@
     transform: scale(1.1);
   }
 
-  .loader div:before {
-    content: '';
+  .loader>div>div {
     display: block;
     position: absolute;
     width: 100%;
@@ -25,15 +24,15 @@
     transform-origin: 100% 100%;
   }
 
-  .loader div:nth-child(2):before {
+  .loader>div:nth-child(2)>div {
     animation-delay: 0.3s;
   }
 
-  .loader div:nth-child(3):before {
+  .loader>div:nth-child(3)>div {
     animation-delay: 0.6s;
   }
 
-  .loader div:nth-child(4):before {
+  .loader>div:nth-child(4)>div {
     animation-delay: 0.9s;
   }
 

@@ -1,14 +1,13 @@
 .bouncing-squares {
     .loader {
         display: flex;
-        justify-content: space-around;
-        width: 80px;
     }
 
     .loader div {
         width: 16px;
         height: 16px;
         background-color: #3498db;
+        margin: 3px;
         animation: bounce 1.2s infinite ease-in-out;
     }
 

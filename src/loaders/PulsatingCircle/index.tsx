@@ -1,9 +1,14 @@
 import React from 'react';
 import "./index.scss";
-const PulsatingCircle = () => {
+import { ILoader } from '../types';
+const PulsatingCircle = (props: ILoader) => {
+    let className = "pulsating-circle";
+    if (props.className) {
+        className += ` ${props.className}`;
+    }
     return (
-        <div className="pulsating-circle">
-            <div className="loader"></div>
+        <div className={className}>
+            <div className="loader" style={{ width: props.width, height: props.width, backgroundColor: props.color }}></div>
         </div>
     )
 }

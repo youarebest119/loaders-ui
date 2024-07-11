@@ -1,12 +1,10 @@
 .sliding-squares {
   .loader {
     display: flex;
-    justify-content: space-around;
-    width: 80px;
   }
   .loader div {
     width: 20px;
-    height: 20px;
+    height: 20px;flex-shrink: 0;
     background-color: #3498db;
     animation: slide 1.2s infinite ease-in-out;
   }

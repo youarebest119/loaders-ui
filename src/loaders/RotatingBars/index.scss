@@ -1,13 +1,12 @@
 .rotating-bars {
   .loader {
     display: flex;
-    justify-content: space-around;
-    width: 80px;
   }
 
   .loader div {
     width: 8px;
     height: 32px;
+    margin: 0 15px;
     background-color: #3498db;
     animation: rotate 1.2s infinite ease-in-out;
   }

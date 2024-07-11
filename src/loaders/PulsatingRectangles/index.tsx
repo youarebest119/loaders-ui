@@ -1,12 +1,17 @@
 import React from 'react';
 import "./index.scss";
-const PulsatingRectangles = () => {
+import { ILoader } from '../types';
+const PulsatingRectangles = (props: ILoader) => {
+    let className = "pulsating-rectangles";
+    if (props.className) {
+        className += ` ${props.className}`
+    }
     return (
-        <div className="pulsating-rectangles">
+        <div className={className}>
             <div className="loader">
-                <div></div>
-                <div></div>
-                <div></div>
+                <div style={{ backgroundColor: props.color, width: props.width, height: props.width }}></div>
+                <div style={{ backgroundColor: props.color, width: props.width, height: props.width }}></div>
+                <div style={{ backgroundColor: props.color, width: props.width, height: props.width }}></div>
             </div>
         </div>
     )

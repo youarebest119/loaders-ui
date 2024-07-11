@@ -1,11 +1,28 @@
 import React from 'react';
 import "./index.scss";
-const WanderingCubes = () => {
+import { ILoader } from '../types';
+const WanderingCubes = (props: ILoader) => {
+    let className = "wandering-cubes";
+    if (props.className) {
+        className += ` ${props.className}`;
+    }
     return (
-        <div className="wandering-cubes">
+        <div className={className}>
             <div className="loader">
-                <div></div>
-                <div></div>
+                <div
+                    style={{
+                        width: props.width,
+                        height: props.width,
+                        backgroundColor: props.color,
+                    }}
+                ></div>
+                <div
+                    style={{
+                        width: props.width,
+                        height: props.width,
+                        backgroundColor: props.color,
+                    }}
+                ></div>
             </div>
         </div>
     )

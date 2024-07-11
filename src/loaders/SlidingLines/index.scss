@@ -1,12 +1,12 @@
 .sliding-lines {
   .loader {
     display: flex;
-    justify-content: space-around;
-    width: 100px;
   }
 
   .loader div {
     width: 8px;
+    flex-shrink: 0;
+    margin: 0 4px;
     height: 40px;
     background-color: #3498db;
     animation: slide 1.2s infinite ease-in-out;

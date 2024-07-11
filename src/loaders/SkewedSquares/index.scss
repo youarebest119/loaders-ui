@@ -1,14 +1,11 @@
 .skewed-squares {
   .loader {
     display: flex;
-    justify-content: space-around;
-    width: 80px;
-    height: 80px;
-    align-items: center;
   }
 
   .loader div {
     width: 20px;
+    flex-shrink: 0;
     height: 20px;
     background-color: #3498db;
     transform: skew(20deg);
