@@ -1,47 +1,41 @@
 # Loaders Package
 
-**Note: This package is currently under active development. We are committed to delivering high-quality components that will enhance your projects. At present, we are focusing on introducing features such as customizability through props and other enhancements.**
-
-
-A collection of customizable and visually appealing loaders for your web applications.
+A fully functional & comprehensive suite of customizable and visually appealing loaders designed to enhance your web applications.
 
 ## Loaders Available
-1. **BouncingBalls**
-2. **BouncingSquares**
-3. **Circle**
-4. **ColorFullSpinner**
-5. **DoubleBounce**
-6. **DoubleRing**
-7. **ExpandingCircle**
-8. **ExpandingRing**
-9. **FlashSquares**
-10. **FlashingDots**
-11. **FlashingSquares**
-12. **FoldingCube**
-13. **MorphSquare**
-14. **PulsatingCircle**
-15. **PulsatingCrosses**
-16. **PulsatingHexagon**
-17. **PulsatingRectangles**
-18. **PulsatingRings**
-19. **PulsatingSquare**
-20. **RollingSquares**
-21. **RotatingBars**
-22. **RotatingDots**
-23. **RotatingPlane**
-24. **ScalingSquares**
-25. **SkewedSquares**
-26. **SlidingBars**
-27. **SlidingLines**
-28. **SlidingRectangles**
-29. **SlidingSquares**
-30. **Spinner**
-31. **SpinnerHalf**
-32. **SpinnerRing**
-33. **WanderingCubes**
-34. **Waving**
-35. **ZigZagLine**
-
+1. `BouncingBalls`
+2. `BouncingSquares`
+3. `Circle`
+4. `ColorFullSpinner`
+5. `DoubleBounce`
+6. `DoubleRing`
+7. `ExpandingCircle`
+8. `ExpandingRing`
+9. `FlashSquares`
+10. `FlashingDots`
+11. `FlashingSquares`
+12. `FoldingCube`
+13. `MorphSquare`
+14. `PulsatingCircle`
+15. `PulsatingCrosses`
+16. `PulsatingHexagon`
+17. `PulsatingRectangles`
+18. `PulsatingRings`
+19. `PulsatingSquare`
+20. `RollingSquares`
+21. `RotatingBars`
+22. `RotatingDots`
+23. `RotatingPlane`
+24. `ScalingSquares`
+25. `SkewedSquares`
+26. `SlidingBars`
+27. `SlidingLines`
+28. `SlidingSquares`
+29. `Spinner`
+30. `SpinnerHalf`
+31. `SpinnerRing`
+32. `WanderingCubes`
+33. `ZigZagLine`
 
 ## Installation
 
@@ -53,7 +47,7 @@ npm install loaders-ui
 
 ## Usage
 
-### Bouncing Squares Loader
+### Simple Spinner
 
 ```tsx
 import React from 'react';
@@ -69,6 +63,48 @@ const App = () => (
 export default App;
 ```
 
+## Common Props
+
+All loaders can accept the following common props:
+
+- `width` (string | number): Define the size of the loader.
+- `color` (string): Define the primary color of the loader. Default is `#3498db`.
+- `className` (string): Add custom class names for styling.
+
+## Specific Props
+
+### ColorFullSpinner
+
+- `colors` [string, string, string, string]: Define the four colors of the spinner's stroke.
+- `color` : is not valid in this case.
+
+### DoubleRing
+
+- `width` (number): Define the size of the loader.
+
+### ExpandingRing
+
+- `borderWidth` (number): Define the border-width of ring.
+
+### RotatingDots
+
+- `dotsSize` (number | string): Define the size of the dots.
+
+### Spinner
+
+- `dullColor` (string): Define the stroke (of complete circle) color.
+- `borderWidth` (number | string): Define the stroke width.
+
+### SpinnerHalf ,
+### SpinnerRing
+
+- `borderWidth` (number | string): Define the stroke width.
+
+### ZigZagLine
+
+- `maxWidth` (number | string): Define the max width of where line can be moved.
+- `height` (number | string): Define the height of the line.
+
 ## Keywords
 
 - loaders
@@ -83,4 +119,3 @@ export default App;
 ## License
 
 This project is licensed under the MIT License.
-#

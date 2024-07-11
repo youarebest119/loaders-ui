@@ -1,3 +1,4 @@
+import React from 'react';
 import { ILoader } from '../types';
 import "./index.scss";
 const RollingSquares = (props: ILoader) => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import "./index.scss";
 import { ILoader } from '../types';
-const Spinner = (props: { dullColor?: string,borderWidth?: number | string } & ILoader) => {
+const Spinner = (props: { dullColor?: string, borderWidth?: number | string } & ILoader) => {
     let className = "spinner";
     if (props.className) {
         className += ` ${props.className}`;

@@ -1,7 +1,7 @@
 {
 	"name": "loaders-ui",
-	"version": "1.0.98",
-	"description": "A collection of customizable and visually appealing loaders for your web applications.",
+	"version": "1.1.0",
+	"description": "A fully functional & comprehensive suite of customizable and visually appealing loaders designed to enhance your web applications.",
 	"main": "dist/",
 	"scripts": {
 		"build": "webpack",
