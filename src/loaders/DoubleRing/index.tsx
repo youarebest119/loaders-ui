@@ -9,9 +9,9 @@ const DoubleRing = (props: IDoubleRing) => {
     props.width
     return (
         <div className={className}>
-            <div className="loader" style={{ ...props.width ? { width: props.width * 2, height: props.width * 2 } : {} }}>
-                <div style={{ borderColor: `${props.color} transparent transparent transparent`, borderWidth: props.width }}></div>
-                <div style={{ borderColor: `${props.color} transparent transparent transparent`, borderWidth: props.width }}></div>
+            <div className="loader" style={{ ...props.width ? { width: props.width, height: props.width } : {} }}>
+                <div style={{ borderColor: `${props.color} transparent transparent transparent`, borderWidth: props.width ? props.width / 2 : "" }}></div>
+                <div style={{ borderColor: `${props.color} transparent transparent transparent`, borderWidth: props.width ? props.width / 2 : "" }}></div>
             </div>
         </div>
     )

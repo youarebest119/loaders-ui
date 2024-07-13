@@ -6,10 +6,12 @@ const SpinnerRing = (props: { borderWidth?: number | string } & ILoader) => {
     if (props.className) {
         className += ` ${props.className}`;
     }
-    console.log({props : `${props.color} transparent ${props.color} transparent;`});
     return (
         <div className={className}>
-            <div className="loader">
+            <div className="loader" style={{
+                width: props.width,
+                height: props.width,
+            }}>
                 <div
                     style={{
                         borderColor: `${props.color} transparent ${props.color} transparent`,
