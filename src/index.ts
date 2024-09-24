@@ -32,3 +32,5 @@ export { default as SpinnerHalf } from "./loaders/SpinnerHalf";
 export { default as SpinnerRing } from "./loaders/SpinnerRing";
 export { default as WanderingCubes } from "./loaders/WanderingCubes";
 export { default as ZigZagLine } from "./loaders/ZigZagLine";
+export { default as Infinite } from "./loaders/Infinite";
+export { default as Gooey } from "./loaders/Gooey";

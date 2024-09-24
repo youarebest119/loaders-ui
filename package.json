@@ -1,6 +1,6 @@
 {
 	"name": "loaders-ui",
-	"version": "1.1.4",
+	"version": "1.1.61",
 	"description": "A fully functional & comprehensive suite of customizable and visually appealing loaders designed to enhance your web applications.",
 	"main": "dist/",
 	"scripts": {
@@ -23,7 +23,7 @@
 	  "type": "git",
 	  "url": "https://github.com/youarebest119/loaders-ui"
 	},
-	"homepage": "https://loaders-ui-site.vercel.app/",
+	"homepage": "https://loaders-ui.vercel.app",
 	"devDependencies": {
 		"@types/react": "^18.0.18",
 		"css-loader": "^7.1.2",
