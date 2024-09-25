@@ -3,40 +3,7 @@
 A fully functional & comprehensive suite of customizable and visually appealing loaders designed to enhance your web applications.
 
 ## Loaders Available
-1. `Infinite`
-2. `BouncingBalls`
-3. `BouncingSquares`
-4. `Circle`
-5. `ColorFullSpinner`
-6. `DoubleBounce`
-7. `DoubleRing`
-8. `ExpandingCircle`
-9. `ExpandingRing`
-10. `FlashSquares`
-11. `FlashingDots`
-12. `FlashingSquares`
-13. `FoldingCube`
-14. `MorphSquare`
-15. `PulsatingCircle`
-16. `PulsatingCrosses`
-17. `PulsatingHexagon`
-18. `PulsatingRectangles`
-19. `PulsatingRings`
-20. `PulsatingSquare`
-21. `RollingSquares`
-22. `RotatingBars`
-23. `RotatingDots`
-24. `RotatingPlane`
-25. `ScalingSquares`
-26. `SkewedSquares`
-27. `SlidingBars`
-28. `SlidingLines`
-29. `SlidingSquares`
-30. `Spinner`
-31. `SpinnerHalf`
-32. `SpinnerRing`
-33. `WanderingCubes`
-34. `ZigZagLine`
+1. `Spinner`
 
 ## Installation
 
